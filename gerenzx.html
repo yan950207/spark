@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>预见-首页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gerenzx.css"/>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="header">
+				<div class="logo" role="logo">
+					<a href="#" target="_self">
+						<img src="img/logo.png" alt="预见"/>
+					</a>
+				</div>
+				<ul>
+					<li><a href="#sql-select">SQL查询</a></li>
+					<li><a href="#web-shell">Web-Shell</a></li>
+					<li><a href="#mission-submit">任务提交</a></li>
+				</ul>
+				<div class="search-btn" style="display: none;"></div>
+				<div class="search-form" role="search" style="display: none;">
+					<form>
+				        <input type="text" class="form-control form-contro-input" placeholder="请输入要搜索的内容"/>
+			        	<button type="submit" class="btn submit-btn">搜索</button>
+		        	</form>
+				</div>
+			</div>
+			<div class="content">
+				<div class="content-center">
+					<div class="content-left">
+						<div class="panel-title">TABLE MENU</div>
+						<ul class="scrollbar">
+							<li>book-menu</li>
+							<li>user-table</li>
+							<li>manager-table</li>
+							<li>house-table</li>
+							<li>book-menu</li>
+							<li>user-table</li>
+							<li>manager-table</li>
+							<li>house-table</li>
+							<li>book-menu</li>
+							<li>user-table</li>
+							<li>manager-table</li>
+							<li>house-table</li>
+							<li>book-menu</li>
+							<li>user-table</li>
+							<li>manager-table</li>
+							<li>house-table</li>
+							<li>manager-table</li>
+							<li>house-table</li>
+							<li>book-menu</li>
+							<li>user-table</li>
+							<li>manager-table</li>
+							<li>house-table</li>
+							<li>book-menu</li>
+							<li>user-table</li>
+							<li>manager-table</li>
+							<li>house-table</li>
+						</ul>
+					</div>
+					<div class="content-right">
+						<div id="sql-select" class="active">
+							<div class="panel">
+								<div class="title">SQL查询</div>
+								<div class="panel-top">
+									<div class="panel-title"><p>请输入SQL语句：</p></div>
+									<textarea class="scrollbar"></textarea>
+								</div>
+								<div class="panel-middle">
+									<button type="button" class="btn btn-primary">执行SQL</button>
+									<button type="button" class="btn btn-success">explain</button>
+									<button type="button" class="btn btn-info">clear</button>
+									<button type="button" class="btn btn-warning">format</button>
+									<button type="button" class="btn btn-warning">保存SQL</button>
+								</div>
+								<!--<button class="img-circle"></button>-->
+								<div class="panel-bottom">
+									<div class="panel-title"><p>执行结果：</p></div>
+									<textarea class="scrollbar"></textarea>
+								</div>
+							</div>
+						</div>
+						<div id="web-shell">
+							<div class="panel">
+								<div class="title">Web-Shell</div>
+								<div class="panel-top">
+									<div class="panel-title"><p>My Snippet：</p></div>
+									<textarea class="scrollbar" id="code_text"></textarea>
+								</div>
+								<div class="panel-middle">
+									<button type="button" class="btn btn-primary" onclick="exec()">执行代码</button>
+									<button type="button" class="btn btn-success">explain</button>
+									<button type="button" class="btn btn-info">clear</button>
+									<button type="button" class="btn btn-warning">format</button>
+									<button type="button" class="btn btn-warning">保存代码</button>
+								</div>
+								<!--<button class="img-circle"></button>-->
+								<div class="panel-bottom">
+									<div class="panel-title"><p>执行结果：</p></div>
+									<textarea class="scrollbar"></textarea>
+								</div>
+							</div>
+						</div>
+						<div id="mission-submit">
+							<div class="panel">
+								<div class="title">任务提交</div>
+								<div class="panel-top">
+									<div class="panel-title"><p>请选择文件包：</p></div>
+									<input type="file"/>
+
+								</div>
+								<div class="panel-middle">
+									<div class="panel-title"><p>请输入class：</p></div>
+									<textarea></textarea>
+								</div>
+								<!--<button class="img-circle"></button>-->
+								<div class="panel-bottom">
+									<div class="panel-title"><p>请输入参数：</p></div>
+									<textarea></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-center">
+					<div class="footer1">
+						<dl>
+							<dd><a href="#">社区规范</a></dd>
+							<dd><a href="#">服务条款</a></dd>
+							<dd><a href="#">隐私保护条款</a></dd>
+							<dd><a href="#">体验店地图</a></dd>
+							<dd><a href="#">经纬泰和健康产业投资控股（北京）有限公司</a></dd>
+						</dl>
+					</div>
+					<div class="footer1">
+						<dl>
+							<dd><a href="#">训练课程</a></dd>
+							<dd><a href="#">关于我们</a></dd>
+							<dd><a href="#">联系方式</a></dd>
+						</dl>
+					</div>
+					<div class="footer1">
+						<dl>
+							<dd><img src="img/erweima.jpg"></dd>
+							<dd>关注微信官方公众号</dd>
+						</dl>
+					</div>
+					<div class="footer1">
+						<dl>
+							<dd><img src="img/erweima.jpg"></dd>
+							<dd>扫描二维码下载APP</dd>
+						</dl>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/public.js" type="text/javascript" charset="utf-8"></script>-->
+
+		<script>
+			//左侧列表
+//			$(".content-left ul li a").click(function(){
+//				$(this).parent().children().toggleClass("active");
+//			});
+			$(".header ul li a").click(function(){
+				$(this).addClass("active").siblings(".active").removeClass("active");
+				$(this).addClass("disabled").siblings(".disabled").removeClass("disabled");
+				var id=$(this).attr("href");
+				$(id).addClass("active").siblings(".active").removeClass("active");
+			});
+			$(document).ready(function(){
+				$("#jcjg").addClass("active");
+				$("[href='#jcjg']").addClass("disabled");
+			});
+			function exec(){
+				var exec = new Object();
+				exec.code = code_text.value;
+				exec.kind='spark';
+				console.log(exec);
+				$.ajax({
+					//ContentType:"application/json",
+					type:"POST",
+					crossDomain: true,
+					dataType: "jsonp",
+					url: "http://platform.spark.com:8080/session/exec",
+					data: exec,
+					success: function(data){
+						console.log(data.data);
+					}
+				});
+			}
+		</script>
+	</body>
+</html>
